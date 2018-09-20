@@ -343,6 +343,7 @@ h4 {
 .socialMediaBar {
 	justify-content: space-around;
 	width: 100%;
+	bottom: 70px;
 }
 
 .listenContainer {
