@@ -186,9 +186,9 @@ section {
 }
 
 #listen {
-	height: 100vh;
 	width: 100vw;
 	background-color: transparent;
+	min-height: 0;
 }
 
 #listen > #spotifyPlayer{
@@ -247,7 +247,6 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;	
 }
 
 .pressPhoto > img {
