@@ -345,4 +345,15 @@ h4 {
 	min-height: 0;
 }
 
+.socialMediaButtons{
+	width: 100%;
+	justify-content: space-around;
+}
+
+}
+
+@media(max-width: 340px){
+	h1 {
+		font-size: 60px;
+	}
 }
