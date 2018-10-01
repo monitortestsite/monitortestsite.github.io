@@ -107,6 +107,7 @@ section {
 	display: flex;
 	justify-content: center;
 }
+
 .navLinkContainer{
 	display: flex;
 	justify-content: space-around;
@@ -138,7 +139,7 @@ section {
 	width: 100vw;
 	position: fixed;
 	top: 0;
-	background-color: #1a1714;
+	background-color: rgba(26,23,20, .6);
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -149,10 +150,15 @@ section {
 
 .socialMediaBar {
 	width: 100%;
-	position: absolute;
-	bottom:35px;
+	padding-bottom: 35px;
 	display: flex;
+	margin-top: auto;
 	justify-content: center;
+}
+
+.alignmentBlock {
+	padding-top: 35px;
+	margin-bottom: auto;
 }
 
 .socialMediaButtons{
@@ -167,13 +173,14 @@ section {
 	background-color: transparent;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	padding: 50px 0 50px 0;
 }
 
 #bioContainer {
 	width: 70%;
-	max-width: 800px;
-	padding: 50px 0 50px 0;
+	max-width: 725px;
 }
 
 #bioContainer > p {
@@ -306,6 +313,10 @@ section {
 
 .visible {
 	display: flex;
+}
+
+.invisible {
+	display: none;
 }
 
 .pressPhoto > img {

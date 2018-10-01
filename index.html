@@ -13,35 +13,39 @@
 		<i id="menuButton" class="menuButton fas fa-2x fa-bars"></i>
 		<section id="home">
 			<div class="sectionMask">
-				<h1> MONITOR </h1>
-				<div class="mainPageNav">
-					<div id="navBar" class="navBar">
-						<div id="navLinkContainer" class="navLinkContainer visible mobile">
-							<h4><a class="navLink" href="#home">Home</a></h4>
-							<h4><a class="navLink" href="#band">Band</a></h4>
-							<h4><a class="navLink" href="#liveShows">Performances</a></h4>
-							<h4><a class="navLink" href="#press">Press</a></h4>
-							<h4><a class="navLink" href="#listen">Listen</a></h4>
+				<div class="alignmentBlock" style="visibility: hidden"></div>
+				<div>
+					<h1> MONITOR </h1>
+					<div class="mainPageNav">
+						<div id="navBar" class="navBar">
+							<div id="navLinkContainer" class="navLinkContainer visible mobile">
+								<h4><a class="navLink" href="#home">Home</a></h4>
+								<h4><a class="navLink" href="#band">Band</a></h4>
+								<h4><a class="navLink" href="#liveShows">Performances</a></h4>
+								<h4><a class="navLink" href="#press">Press</a></h4>
+								<h4><a class="navLink" href="#listen">Listen</a></h4>
+							</div>
 						</div>
-					</div>
-					<div class="socialMediaBar">
-						<div class="socialMediaButtons">
-							<a href="https://open.spotify.com/artist/5OUfsZqqBlsVtWIzayDPF5?si=JSNK3Iu_QfWcU4xdL_husQ" target="_blank"><i class="fab fa-2x fa-spotify"></i></a>
-							<a href="https://www.facebook.com/monitorourband" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
-							<a href="https://www.instagram.com/monitorband/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
-							<a href="https://monitor.bandcamp.com/" target="_blank"><i class="fab fa-2x fa-bandcamp"></i></a>
-							<a href="https://soundcloud.com/monitortheband" target="_blank"><i class="fab fa-2x fa-soundcloud"></i></a>
-						</div>
+					</div>	
+				</div>
+				<div class="socialMediaBar">
+					<div class="socialMediaButtons">
+						<a href="https://open.spotify.com/artist/5OUfsZqqBlsVtWIzayDPF5?si=JSNK3Iu_QfWcU4xdL_husQ" target="_blank"><i class="fab fa-2x fa-spotify"></i></a>
+						<a href="https://www.facebook.com/monitorourband" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+						<a href="https://www.instagram.com/monitorband/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+						<a href="https://monitor.bandcamp.com/" target="_blank"><i class="fab fa-2x fa-bandcamp"></i></a>
+						<a href="https://soundcloud.com/monitortheband" target="_blank"><i class="fab fa-2x fa-soundcloud"></i></a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="band">
-			<div id="bioContainer">
+			
 				<h2>We&rsquo;re just like you.</h2>
 				<br>
 				<h3>Monitor is a Seattle band comprised of Dave Raskin, Connor Smith and Jack McGrath.  </h3>
 				<br>
+			<div id="bioContainer">
 				<p>
 					Monitor strives to create musical worlds that help to shed new light on the one big World we all live on. In 2016, Dave and Connor moved in together to write what would become Monitor's debut album, &lsquo;Memorand&rsquo;, and travelled to Brooklyn, NY to record it with Producer Kyle Joseph.  Raskin and Smith hoped to create a diverse palette of musical colors on &lsquo;Memorand&rsquo;, and when it released in 2017, critics believed that they succeeded, describing it as a &ldquo;delicate&rdquo; and &ldquo;trippy odyssey.&rdquo;
 					<br>
@@ -123,7 +127,11 @@
 		}
 
 		menuButton.addEventListener('click', function(e) {
-			navLinkContainer.classList.add('visible')
+			if (navLinkContainer.classList.contains('visible')) {
+				navLinkContainer.classList.remove('visible');
+			} else {
+				navLinkContainer.classList.add('visible');
+			}	
 		})
 
 		var anchorlinks = document.querySelectorAll('a[href^="#"]');
