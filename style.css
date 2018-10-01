@@ -351,10 +351,14 @@ h4 {
 	font-size: 30px;
 }
 
+.alignmentBlock {
+	padding-top: 70px;
+}
+
 .socialMediaBar {
 	justify-content: space-around;
 	width: 100%;
-	bottom: 70px;
+	padding-bottom: 70px;
 }
 
 .listenContainer {
